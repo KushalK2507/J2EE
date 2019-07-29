@@ -1,0 +1,7 @@
+MVC --> Model View Controller
+MVC is used for 2 concerns --> Code Usability AND Separation Of Concern.
+
+Dynmaic Project consists of 3 modules:
+1. Model --> It concerns with Database Operation. 
+2. View --> It concerns with UI OR front end of your application
+3. Controller --> It is responsible for the Business Logic.
