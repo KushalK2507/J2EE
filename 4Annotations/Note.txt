@@ -1,0 +1,5 @@
+From Dynamic Project 3.0 the Annotation were introduced.
+
+In this since we are using the annotation the the web.xml is minimual
+i.e. no servlet mapping is done i.e. servlet mapping is done through annotation
+using the annotation @WebServlet inside Servlet class.

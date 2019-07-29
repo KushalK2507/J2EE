@@ -1,0 +1,9 @@
+If we use the get method the value of the fields OR parameter 
+are printed on the URL tag.
+
+If we use the post method the value of the fields OR parameters
+are not visible on the URL tag.
+
+In form if we give the method as get in the form then in the servlet doGet will handle 
+the request
+and if we post in the form then in the servlet doPost will handle the request. 

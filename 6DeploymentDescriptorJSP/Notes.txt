@@ -1,0 +1,27 @@
+In this we have created the Dynamic Web Project of version 2.6
+Now we need to configure the JSP file mapping as it was done for servlet.
+
+Create the Servlet class as Demo first, 
+then servlet mapping tag will automatically comes in web.xml file,
+Then We have to change some tags in web.xml as below.
+
+<servlet>
+		<description></description>
+		<display-name>Hello JSP</display-name>
+		<servlet-name>Hello JSP</servlet-name>
+		<jsp-file>/HelloJSP.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Hello JSP</servlet-name>
+		<url-pattern>/HelloJSP</url-pattern>
+	</servlet-mapping>
+	
+	
+The above is changes in web.xml
+Inside the jsp-file tag the path of of the JSP file is given
+which is relative to the Web-Content folder.
+
+Now we will run directly the JSP file. 
+And see the URL pattern it would be same as URL pattern in
+ servlet mapping in web.xml file. 

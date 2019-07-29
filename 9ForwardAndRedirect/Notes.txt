@@ -1,0 +1,5 @@
+In Forward the URL does not change and the content are Forwarded page will be shown.
+This is used if we want hide the URL from the world.
+
+In Redirect the URL changes and web Page is forwarded to the redirected page mentioned in the JSP page.
+In this URL is changed. 

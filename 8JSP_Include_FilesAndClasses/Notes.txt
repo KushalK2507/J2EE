@@ -1,0 +1,8 @@
+To include the file we have 2 ways : 
+1. <%@ %> directive element --> This is used for static content for the file
+2. <jsp:include page=""> </jsp:include page=""> --> This is used for dynamic content in file
+
+
+To import classes in JSP
+<%@page import="java.util.Date"%>
+This is used only for types in JAVA and would not be able to include whole package as java.util.

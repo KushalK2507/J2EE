@@ -1,0 +1,16 @@
+Run Directly HelloWorld.jsp file
+
+Expression element does not support ";", Hence we can writre only single statement
+When there is only single line statement we can use Expression element.
+
+If we declare the element inside the expression OR Scriplet then we cannot use access specifier for that variable.
+Inside Declaration statement we can make use ACESS SPECIFIER.
+Inside the Declaration we can declare the methods. 
+
+We can use JAVA comments inside the Scriplet, 
+but for commenting declaration OR Expression elements
+ we need to use JSP comments which <%-- xyz --%>
+ So always use JSP comments when using JSP Elements
+ 
+ <%@ %> this is the JSP directive element
+ JSP Directive are used to provide the meta-data like language,content-type.

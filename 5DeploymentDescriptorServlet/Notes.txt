@@ -1,0 +1,5 @@
+In this project we are using Dynamic Web Project of version 2.5, 
+Hence annotation is not supported.
+
+so now if we create the Servlet class 
+the web.xml is automatically updated with Servlet mapping. 
