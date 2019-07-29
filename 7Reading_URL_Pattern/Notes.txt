@@ -1,0 +1,21 @@
+1. Reading URL parameters
+ 
+	a. ParamterServlet.java from Servlet
+In this Just print something on web page and run the servlet
+Then in Google chrome modify the URL as below :
+http://localhost:9090/7JSP/ParameterServlet?getValue1=testingParamter
+in this getValue is URL pattern if you press enter then nothing would happen 
+then make in Servlet classes and make uses of this parameter using request object as below
+response.getWriter().print(request.getParameter("getValue1"));
+
+If we have add multiple Query paramter from URL then we make use of & sign in URL as below:
+http://localhost:9090/7JSP/ParameterServlet?getValue1=Kushal&getValue2=Kesarwani
+then Servlet code is as below:
+response.getWriter().print("Reading Paramter Values");
+		response.getWriter().println("Value 1" + request.getParameter("getValue1"));
+		response.getWriter().println("Value 2" + request.getParameter("getValue2"));
+ 
+b. ParametValue.jsp from JSP
+We have write the same code in scriplet as below:
+IN JSP response and request objects are available.
+
