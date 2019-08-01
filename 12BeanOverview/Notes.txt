@@ -1,0 +1,4 @@
+JAVA Beans helps us to encapsulate multiple Objects into 1 JAVA Bean and we access
+these object using getters and setters
+
+A bean is class which consist of independent multiple properties and these properties are objects
