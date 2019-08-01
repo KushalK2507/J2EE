@@ -20,3 +20,8 @@ If we change the scope as page then this will not be reflected in different page
 To see the changes of setProperty then we need to use the getProperty in the same page
 to see the changes as the scope is set page all the values will be available to only
 to single page.
+In this single bean is created per page.
+
+Request Scope
+
+
