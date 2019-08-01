@@ -2,3 +2,21 @@ JAVA Beans helps us to encapsulate multiple Objects into 1 JAVA Bean and we acce
 these object using getters and setters
 
 A bean is class which consist of independent multiple properties and these properties are objects
+
+Scope has impact on Availability and Visibility of the bean
+
+Session Scope
+If the scope is session in JSP page then it is limited to single session 
+i.e. in single browser, If we change the browser then then execute the getProperty.jsp
+page then we would get the default value as NULL even if the setProperty is executed.
+
+Application Scope
+If we change the scope as application then this bean will be shared across this application.
+application scope is the widest scope and in this case only single bean is created and used
+within the application.
+
+Page Scope
+If we change the scope as page then this will not be reflected in different page.
+To see the changes of setProperty then we need to use the getProperty in the same page
+to see the changes as the scope is set page all the values will be available to only
+to single page.
