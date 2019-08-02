@@ -1,0 +1,13 @@
+In this we are using the getProperty in form to get the values from the forms in 
+setProperty.jsp. and the name should be exactly match with the property defined in the 
+Entity class (User.java)
+
+Now in getProperty.jsp, we would simply write below to set all the properties which 
+we would get from the form and set to the fields of the bean i.e. entity class.
+We should have 1 to 1 mapping between the fields in the form and the entiry and name should
+exact match to set the property correctly.
+
+Reason for using Bean
+Bean is a encapsulated Data Set of independent property.
+It makes easy for developer to send the receive the data easily.
+This is usefule for big application when we need to pass the infirmation to multiple page. 

@@ -7,9 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="user" class="org.kushal.bean.User" scope="page"></jsp:useBean>
+<jsp:useBean id="user" class="org.kushal.bean.User" scope="request"></jsp:useBean>
 <jsp:setProperty property="firstName" name="user" value="Hello"/>
 <jsp:setProperty property="lastName" name="user" value="World"/>
 Values are set
+<%
+request.getRequestDispatcher("getPropertyRequestScope.jsp").forward(request, response);
+%>
 </body>
 </html>

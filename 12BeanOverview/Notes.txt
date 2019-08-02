@@ -23,5 +23,11 @@ to single page.
 In this single bean is created per page.
 
 Request Scope
-
+The request scope is limited to single JSp page. For every JSP page there is separate
+request and response object are created per pages.
+So if we set scope to request then if we execute the setPropertyRequest.jsp and 
+then getPropertyRequest then we would get the default value of setPropertyRequest as Request 
+scope is used which limit the scope object to that JSP page only.
+To sent the request value from setProperty to getPropery using the Request scope then 
+we would use forward and forward the request to getProperty.
 

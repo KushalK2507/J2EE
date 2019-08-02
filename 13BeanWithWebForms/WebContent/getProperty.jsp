@@ -7,12 +7,12 @@
 <title>Get Property JSP</title>
 </head>
 <body>
-	<jsp:useBean id="user" class="org.kushal.bean.User" scope="request"></jsp:useBean>
+	<jsp:useBean id="user" class="org.kushal.bean.User" scope="session"></jsp:useBean>
+	<jsp:setProperty property="*" name="user" />
 	First Name:
 	<jsp:getProperty property="firstName" name="user" />
-	<%--In this first name is the property name in the entity class and name is the id 
-	of the bean that we have given in just above line. --%>
 	Last Name:
 	<jsp:getProperty property="lastName" name="user" />
+
 </body>
 </html>
