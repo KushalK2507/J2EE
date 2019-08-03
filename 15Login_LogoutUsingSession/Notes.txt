@@ -1,0 +1,12 @@
+When we invalidate any session any Session then all the Attributes present in that session 
+get deleted.
+
+If Cookies are disable then we need to use the encoded URL to get the Context path.
+Whenever we are using the request.getContextParth
+ then we need to use necodeURL method as below:
+
+ String encodeURL=response.encodeURL(request.getContextPath());
+ Now this variable encodeURL would get the value of ContextPath along with SessionID
+ So if we use this then in the URL the along with the URL SessionID will alos be printed 
+ in the URL
+ 

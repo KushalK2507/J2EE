@@ -1,0 +1,18 @@
+Sessions
+In this we are not about the browser Session but about user Identification
+The browser identifies the user Session by SessionID
+
+When any user is logged in web browser then there session is created in Server side 
+in session pool which consist of unique sessionID and this sessionId is kept inside the 
+cookie which is created in Web Browser
+So seesionId on server side saved in Session pool and in Cookie in Web Rowser.
+
+Cookies
+It is used to personalize the website experience
+It is used to keep the track of user perferences
+Cookie is a small chunk of memory for a particular website
+The information saved in cookie are text based and 
+can be exchanges between server and browser
+Cookies are just like key value pair.
+
+This project implements UserLogin and Logout page using Cookie
