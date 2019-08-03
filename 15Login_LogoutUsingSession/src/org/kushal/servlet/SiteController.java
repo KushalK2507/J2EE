@@ -55,7 +55,6 @@ public class SiteController extends HttpServlet {
 		default:
 			break;
 		}
-
 	}
 
 	private void authenticate(HttpServletRequest request, HttpServletResponse response)
