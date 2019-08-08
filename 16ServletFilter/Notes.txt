@@ -1,0 +1,21 @@
+In our previous to restrict the user on the basis of Session we are using in 
+Member Area JSP page, so we are having more pages which can be only visited by Member Area
+then same logic needs to be implemented on every page, so to overcome this, we can use the 
+Servlet Filter.
+
+Now we will create the Servlet Filter, this is is java file which can be created by 
+right click on src folder select filter.
+The most important method insode filter class is doFilter method.
+
+In older version we can set the filter using web.xml but Servlet 3.0 onwars this can be 
+done using annotation @WebFilter
+
+First we will replace the URL pattern with the MemberArea controller URL.
+i.e. the URL pattern of MemberController and MemberArea will be same.
+Second Typecast the request and response to HttpServletRequest and HttpServletResponse 
+in filter
+
+Now same logic to check the userName and session
+and if userName is null then redirecting the page to login page
+
+For Flow mechanis, of filter see image ServletFilter.png
