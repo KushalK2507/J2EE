@@ -10,6 +10,5 @@
 	<jsp:useBean id="user" class="org.kushal.bean.User" scope="page"></jsp:useBean>
 	Using the getter method: ${user.getFirstName() }
 	<br /> Directly printing the variable: ${user.firstName }
-
 </body>
 </html>
