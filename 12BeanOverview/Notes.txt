@@ -1,7 +1,16 @@
 JAVA Beans helps us to encapsulate multiple Objects into 1 JAVA Bean and we access
 these object using getters and setters
 
-A bean is class which consist of independent multiple properties and these properties are objects
+A bean is class which consist of independent multiple properties and 
+these properties are objects
+
+A bean is entity class which consist of some properties.
+
+Reading the Data from Bean.
+We can directly read the data from the Bean class.
+In the id we have complete object for the Bean and we can access the properties from 
+the getter and setter OR direclty access the private variable as well.
+
 
 Scope has impact on Availability and Visibility of the bean
 
