@@ -1,0 +1,60 @@
+JSTL stands for JSP Standard Tag Library
+JSTL can be divided into 5 category :
+1. Core
+2. XML
+3. i18N(Internationalization)
+4. Database : Not used. It is not recommened to use Database in view pages.
+5. Functions 
+
+Download the JSTL libraties from Net (Search JSTL downloads maven)
+Download JSTL jar from maven repository.
+Apart from this there is 1 more dependency called JSP-API which is already present in
+our APACHE repository.
+Copy the downloaded jstl jar into the lib folder which is present inside WEB-INF.
+
+Use of JSTL tags in our projects.
+First we need to include the tags in our pages before using it in our JSP
+These taglibs are similiar to import in JAVA.
+
+${name} --> This is expression language. This can be used directly inside JSP page
+Expression language is a set of expression which is used to set our work. 
+
+
+Reading from Beans using Expression language.
+
+In the id we have complete object for the Bean and we can access the properties from 
+the getter and setter OR direclty access the private variable as well.
+
+
+JSTL Decision Making.
+In JSTL the Decision making tags are the part of Core library of JSTL.
+In JSTL core tags we have only if tag available and there is no else part.
+In JSTL core tag we have choose and when tag which is equivalent to Switch Case.
+Inside choose tag we use when tag to define the cases.
+and otherwise is used as default is used in switch case.
+
+
+JSTL Loops
+Loop in JSTL comes under core functionality of JSTL
+Here we have 2 types of loop : for loop and foreach loop
+
+JSTL forTokens
+In JSTL forTokens are used for separating any String.
+
+
+JSTL imports and param tags
+If we have redundant code present then its better to import write it in separate file and 
+import that file. Redundant codes example are like Footer and Headers
+We can also use the param tag to avoid using Hard coded value in title tag 
+inside header and footer JSP files
+
+JSTL URL and Redirects tags
+We use URL tag direct which is present JSTL core lib and 
+this gives the complete URL of the page
+We use Redirect tag which is present in JSTL core lib and
+this gives 
+
+JSTL Catch tag
+JSTL core lib provides us the tag to handle the exception
+We can make use catch tag to handle any Exception on the web page by use <c:catch> tag.
+ 
