@@ -1,0 +1,30 @@
+Internationalization refers to (i18N).
+In internationalization the website supports multiple languages and multiple currencies, in
+short multiple locale
+
+LocaleId help us to identify the language and country
+To check various locale see --> https://studyeasy.org/general/locale/
+
+LocaleId is used to select the language of the website
+
+To use i18N our website encoding should be UTF and not ISO which is mentioned in top
+of JSp page as below:
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+To support i18N, charset=UTF-8 pageEncoding should be UTF-8 
+
+To support the i18N we need to also configure our eclipse which can be below steps:
+Window --> General --> WorkSpace --> TypeEncoding in below and select UTF-8
+
+In .properties file if we convert the words to different language it will show 
+the unicode of that word which is fine.
+The unicode would be present for the language which are not suppoerted like hindi
+
+We will use JSTL formatting taglib for internationalization
+fm:message is used to import the tag and the value of the key attribute
+ will the label name that we have defined in the .properties file
+fm:bundle is used to refer the path of the .properties file and the attribute basename
+is used to give the path
+
+If any of the locale file i.e. locale of any property file is not present then it will use
+the default locale properties file  
