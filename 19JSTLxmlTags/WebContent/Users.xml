@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+	<user>
+		<name>Kushal</name>
+		<age>27</age>
+		<gender>M</gender>
+	</user>
+
+	<user>
+		<name>Komal</name>
+		<age>28</age>
+		<gender>F</gender>
+	</user>
+
+	<user>
+		<name>Ved</name>
+		<age>68</age>
+		<gender>M</gender>
+	</user>
+
+	<user>
+		<name>Uma</name>
+		<age>59</age>
+		<gender>F</gender>
+	</user>
+
+</users>
