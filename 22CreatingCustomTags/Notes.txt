@@ -1,0 +1,7 @@
+we always create the tag file inside the WEB-INF folder.
+So create the tag folder inside WEB-INF folder then create JSP tag file.
+To create the new JSPtag file create new file search for JSP tag.
+
+Whenever we called this tag inside other JSP file then at that time all the code inside 
+this file will get executed.
+ 
