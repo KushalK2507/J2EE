@@ -1,0 +1,16 @@
+In Servlet Initialization we will create the new Servlet and inside this we will make the
+URL of this servlet as "/" this means all the request on this website will be served by this
+servlet only and while creating the servlet we will also select to create the init method.
+
+init() method is used to initialized the element when we load the Servlet. See Servlet Home.
+To load the data using init() is older way.
+
+As new we can use the Annotation to intialize the elements on the load of the Servlet.
+We will give the name and value while creating the Servlet in Initilization Paramter
+screen which is on the next of after giving the servlet name and on the same window where 
+we URL mapping. See Servlet InitServlet
+
+
+init() method gets hits whenever Servlet is loaded.
+service() method gets hits whenever there is a request the service() method gets invoked.
+destroy() when we stop the webserver then all the resources gets released.
