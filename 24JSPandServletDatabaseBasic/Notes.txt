@@ -1,0 +1,26 @@
+Download MySQl workBench
+Create new instance for JAVA
+Create new DB schema from left below corner, by right click and create new Schema
+Expand that schema and create new table by right clicking on the table.
+Now insert some data inside the table
+
+Now create new project in STS and download the MySQL Connector jar from net and put that jar
+in build path of your project.
+
+JNDI stands for JAVA Naming And Directory Interface.
+Way to connecting to Database through JNDI is recommended as it will automatically 
+maintain the pools and performance will not be effected.
+
+After this create to configure the JNDI we need to create the context.xml file inside
+META-INF folder.
+
+Inside the context.xml file
+"name" is the name of the connection pool OR Datasource both are the same thing.
+"Container" We are authenticating for the emntire container.
+"type" --> type of the connection which is java.sql.DataSource
+"maxActive" this signifies at 1 specific time period we can have only 25 active connection
+"maxIdle" this signifies there can be max 5 idle connection
+"maxWait" We will wait for 10sec before we terminate any connection OR retry.
+
+Give the driverClassName by going to Driver.class file inside the mySQL connector jar
+and copy the Qualified name of the Driver.class file.
