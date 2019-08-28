@@ -1,0 +1,43 @@
+In this we will create the index.jsp and error.jsp and include the header and footer 
+JSP page using JSTL core tags
+
+Now for error handling the error-page needs to be configure inside the web.xml file
+The tag is as below:
+<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+</error-page>
+
+Now if there is anything wrong in the URL then our error page will get loaded.
+
+Now create the servlet in which we create the DatabAse connection.
+This would be HomeController and URL pattern would be "/home".
+
+Now we give any random thing in URL then error page would not loaded as all the request 
+is handled by our Servlet.
+
+In this we will follow the MVC pattern:
+Model class will be our class inside which we will create the Database connection and 
+the logic to retrieve the data from DB
+Controller class will be our Servlet which will handle all the request
+View will be our JSP files.
+We will also create the entity class which will be User which will contains the field as that are in DB table
+We will also create the context.xml file which is inside META-INF folder.
+The content of the context.xml file will be below:
+<Context>
+	<Resource name="jdbc/project" auth="Container"
+		type="javax.sql.DataSource" maxActive="25" maxIdle="5" maxWait="10000"
+		username="root" password="root"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://127.0.0.1:3306/j2ee_db?useSSL=false" />
+</Context>
+
+
+Now we will handle the DB for adding the user through AppController. 
+If we have multiple form handled by same Controller and doPost method then we will identify 
+it by passing the hidden field from the form.
+
+For listing the user we have ListUsers page
+For adding the user we have addUsers page in which form which will be sumntted to AppController post method.
+For updating the user we have created the link on listUsers page which is submitting the information to be 
+updated to AppController
